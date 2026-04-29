@@ -48,3 +48,5 @@ If nothing was omitted, you may delete this section.
 
 If AI was used for code, analysis, or documentation, place the AI Usage Appendix here at the end of the README.
 If AI was not used, you may delete this section.
+
+Ask if we eed to do this as a whole or not
