@@ -50,10 +50,10 @@ model_params = {
     "mucus_thinner": Slider("% dosage of mucus thinner", MODEL_PARAMETERS["mucus_thinner"], 3, 20),
     "start_pathogen": Slider("Initial Pathogen Count", MODEL_PARAMETERS["start_pathogen"], 1, 300),
     "start_macrophage": Slider("Initial Macrophage count", MODEL_PARAMETERS["start_macrophage"], 10, 50),
-    "start_anti": Slider("Antibiotic concentration", MODEL_PARAMETERS["start_anti"], 5, 50),
-    "call_anti": Slider("Turn to call Antibiotics", MODEL_PARAMETERS["call_anti"], 4, 15),
-    "anti_doses": Slider("Time to redose Antibiotics", MODEL_PARAMETERS["anti_doses"], 4, 15),
-    "call_mucus_thinner": Slider("Turn to call Mucus Thinner", MODEL_PARAMETERS["call_mucus_thinner"], 4, 15),
+    "start_anti": Slider("Antibiotic concentration", MODEL_PARAMETERS["start_anti"], 5, 100),
+    "call_anti": Slider("Turn to call Antibiotics", MODEL_PARAMETERS["call_anti"], 4, 200),
+    "anti_doses": Slider("Time to redose Antibiotics", MODEL_PARAMETERS["anti_doses"], 4, 200),
+    "call_mucus_thinner": Slider("Turn to call Mucus Thinner", MODEL_PARAMETERS["call_mucus_thinner"], 4, 200),
 }
  
  
