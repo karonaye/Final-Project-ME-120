@@ -61,7 +61,7 @@ def run_single_analysis():
     plt.legend(loc="upper left", bbox_to_anchor=(1.02, 1)) # Puts legend outside the plot
     plt.grid(True, alpha=0.3)
     plt.tight_layout()
-    plt.savefig("Population_Dynamics.png", dpi=300)
+    plt.savefig("Graphs/Population_Dynamics.png", dpi=300)
  
     # TIP: To save this image for your PDF, right-click the plot and select "Save image as..."
     # Alternatively, uncomment the line below to save it directly to your folder:
@@ -85,7 +85,7 @@ def run_single_analysis():
     plt.ylabel("Bronchial Health")
     plt.grid(True, alpha=0.3)
     plt.tight_layout()
-    plt.savefig("Bronchiole_Health.png", dpi=300)
+    plt.savefig("Graphs/Bronchiole_Health.png", dpi=300)
  
     #Graph of Biofilm formation
     plt.figure(figsize=(12, 6))
