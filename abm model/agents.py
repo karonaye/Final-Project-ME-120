@@ -10,7 +10,6 @@ import mesa
 from mesa.datacollection import DataCollector
 from mesa import Model,Agent
 from mesa.space import MultiGrid
-from mesa.experimental.cell_space import CellAgent, FixedAgent, OrthogonalVonNeumannGrid
 from mesa.experimental.devs import ABMSimulator
 from mesa.visualization import Slider, SolaraViz, make_plot_component, make_space_component
 
