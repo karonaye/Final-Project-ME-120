@@ -11,6 +11,7 @@ from mesa import Model,Agent
 from mesa.space import MultiGrid
 from mesa.experimental.devs import ABMSimulator
 from mesa.visualization import Slider, SolaraViz, make_plot_component, make_space_component
+from agents import Antibiotic, Macrophage, Mucin, Pathogen, Bronchial
 
 #this cell is used for the creation of the model, which creates the grid
 class LungModel(mesa.Model): 

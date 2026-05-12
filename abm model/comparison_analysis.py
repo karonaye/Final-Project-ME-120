@@ -1,10 +1,16 @@
+import numpy as np
+import pandas as pd
 import matplotlib.pyplot as plt
+import seaborn as sns
+import math
+
+from agents import Antibiotic, Macrophage, Mucin, Pathogen, Bronchial
 from Bronchioles_Infection import LungModel, ABMSimulator, AGENT_COLORS
  
 #Once you have chosen the ideal parameters, you can run this cell to compare the two values!
 #This will run a comparison of the concentrations of Pathogens and Bronchials in the each trial
 # Set the step value
-steps_to_run = 60
+steps_to_run = 30
  
 def run_comparison_analysis():
     # Set the first parameters here!
@@ -171,5 +177,5 @@ def run_comparison_analysis():
     print(f"The Average bronchial Health Profile is more varied in {Trials[avg_health_range.index(max(avg_health_range))]}.")
  
  
-if __name__ == "__Allfilerun__":
+if __name__ == "__name__":
     run_comparison_analysis()

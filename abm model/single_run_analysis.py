@@ -1,4 +1,10 @@
+import numpy as np
+import pandas as pd
 import matplotlib.pyplot as plt
+import seaborn as sns
+import math
+
+from agents import Antibiotic, Macrophage, Mucin, Pathogen, Bronchial
 from Bronchioles_Infection import LungModel, ABMSimulator, AGENT_COLORS
  
 # Change these parameters to experiment with the model!
@@ -18,7 +24,7 @@ MODEL_PARAMETERS = {
     "call_mucus_thinner":100, # turn for mucus thinner to start working
 }
 # Change this value to run the simulation for more or fewer steps
-steps_to_run = 300
+steps_to_run = 30
  
 def run_single_analysis():
     print(f"Running simulation for {steps_to_run} steps...")
@@ -97,5 +103,5 @@ def run_single_analysis():
     plt.savefig("Graphs/Biofilm_Formation.png", dpi=300)
  
  
-if __name__ == "__Allfilerun__":
+if __name__ == "__main__":
     run_single_analysis()

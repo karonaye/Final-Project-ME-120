@@ -78,29 +78,24 @@ def run_viz():
     return page
  
  
-if __name__ == "__Allfilerun__":
-    parser = argparse.ArgumentParser(description="Lung ABM Runner")
-    parser.add_argument(
-        "--mode",
-        choices=["single", "compare", "viz"],
-        default="single",
-        help=(
-            "single  → run one simulation and save graphs\n"
-            "compare → run two simulations side by side and save graphs\n"
-            "viz     → launch Solara interactive visualization"
+page = run_viz()
+
+if __name__ == "__main__":
+    import sys
+    # Only run argparse if NOT being called by solara
+    if "solara" not in sys.argv[0]:
+        parser = argparse.ArgumentParser(description="Lung ABM Runner")
+        parser.add_argument(
+            "--mode",
+            choices=["single", "compare", "viz"],
+            default="single",
         )
-    )
-    args = parser.parse_args()
- 
-    if args.mode == "single":
-        print("Running single simulation...")
-        run_single_analysis()
- 
-    elif args.mode == "compare":
-        print("Running comparison simulation...")
-        run_comparison_analysis()
- 
-    elif args.mode == "viz":
-        print("Launching Solara visualization...")
-        subprocess.run(["solara", "run", "main.py"])
- 
+        args = parser.parse_args()
+
+        if args.mode == "single":
+            print("Running single simulation...")
+            run_single_analysis()
+
+        elif args.mode == "compare":
+            print("Running comparison simulation...")
+            run_comparison_analysis()
