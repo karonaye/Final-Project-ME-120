@@ -25,7 +25,7 @@ To set up the required environment, run this in the terminal
 ‘Python -m ipykernel install --user --name mesa
 Use the mesa kernel for this code
 
-The environment yml file should be sufficient, but if Anaconda is not used, the user may manually install all required components by accessing the environment list. Note that the .py files must be kept within and run from the ‘abm model’ folder.
+The environment yml file should be sufficient, but if Anaconda is not used, the user may manually install all required components by accessing the environment list. Note that the .py files must be kept within and run from the same folder.
 
 
 ## How To Run
