@@ -15,16 +15,16 @@ MODEL_PARAMETERS = {
     #this is wher eu would put the parameter s(if we had any)
     "init_health_Bronchial": 100, # heaalth of bironchil
     "a_radius":1.4, #Raidius of Antibiotic in Meter(multiplied by 10**-10)
-    "mucus_thinner":1,  #% of mucus thinner concentration
-    "start_pathogen":20, #no of starter pathgens
+    "mucus_thinner":5,  #% of mucus thinner concentration
+    "start_pathogen":16, #no of starter pathgens
     "start_macrophage": 5, #starter macro
-    "start_anti" : 15, # how much antibiotics spawn pet teusn
-    "call_anti": 30, #turn that starts calling anirbiotics
-    "anti_doses": 10, #turn that starts calling anirbiotics
+    "start_anti" : 35, # how much antibiotics spawn pet teusn
+    "call_anti": 40, #turn that starts calling anirbiotics
+    "anti_doses": 8, #turn that starts calling anirbiotics
     "call_mucus_thinner":100, # turn for mucus thinner to start working
 }
 # Change this value to run the simulation for more or fewer steps
-steps_to_run = 30
+steps_to_run = 250
  
 def run_single_analysis():
     print(f"Running simulation for {steps_to_run} steps...")

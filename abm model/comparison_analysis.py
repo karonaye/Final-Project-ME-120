@@ -10,25 +10,25 @@ from Bronchioles_Infection import LungModel, ABMSimulator, AGENT_COLORS
 #Once you have chosen the ideal parameters, you can run this cell to compare the two values!
 #This will run a comparison of the concentrations of Pathogens and Bronchials in the each trial
 # Set the step value
-steps_to_run = 30
+steps_to_run = 250
  
 def run_comparison_analysis():
     # Set the first parameters here!
     #Change these parameters to experiment with the model!
     MODEL_PARAMETERS_1 = {
-        "width": 40, # Grid width
-        "height": 20, # Grid height
-        "seed": 100, # Random seed for reproducibility
-        #this is wher eu would put the parameter s(if we had any)
-        "init_health_Bronchial": 100, # heaalth of bironchil
-        "a_radius":1.4, #Raidius of Antibiotic in Meter(multiplied by 10**-10)
-        "mucus_thinner":1,  #% of mucus thinner concentration
-        "start_pathogen":20, #no of starter pathgens
-        "start_macrophage": 5, #starter macro
-        "start_anti" : 15, # how much antibiotics spawn pet teusn
-        "call_anti": 30, #turn that starts calling anirbiotics
-        "anti_doses": 10, #turn that starts calling anirbiotics
-        "call_mucus_thinner":100, # turn for mucus thinner to start working
+    "width": 40, # Grid width
+    "height": 20, # Grid height
+    "seed": 100, # Random seed for reproducibility
+    #this is wher eu would put the parameter s(if we had any)
+    "init_health_Bronchial": 100, # heaalth of bironchil
+    "a_radius":1.4, #Raidius of Antibiotic in Meter(multiplied by 10**-10)
+    "mucus_thinner":5,  #% of mucus thinner concentration
+    "start_pathogen":16, #no of starter pathgens
+    "start_macrophage": 5, #starter macro
+    "start_anti" : 35, # how much antibiotics spawn pet teusn
+    "call_anti": 40, #turn that starts calling anirbiotics
+    "anti_doses": 8, #turn that starts calling anirbiotics
+    "call_mucus_thinner":100, # turn for mucus thinner to start working
     }
  
     print(f"First simulation running")
@@ -55,11 +55,11 @@ def run_comparison_analysis():
         "init_health_Bronchial": 100, # heaalth of bironchil
         "a_radius":1.4, #Raidius of Antibiotic in Meter(multiplied by 10**-10)
         "mucus_thinner":20,  #% of mucus thinner concentration
-        "start_pathogen":20, #no of starter pathgens
+        "start_pathogen":16, #no of starter pathgens
         "start_macrophage": 5, #starter macro
-        "start_anti" : 15, # how much antibiotics spawn pet teusn
-        "call_anti": 30, #turn that starts calling anirbiotics
-        "anti_doses": 10, #turn that starts calling anirbiotics
+        "start_anti" : 25, # how much antibiotics spawn pet teusn
+        "call_anti": 40, #turn that starts calling anirbiotics
+        "anti_doses": 8, #turn that starts calling anirbiotics
         "call_mucus_thinner":80, # turn for mucus thinner to start working
     }
  
@@ -94,7 +94,9 @@ def run_comparison_analysis():
     plt.legend(loc="upper left", bbox_to_anchor=(1.02, 1)) # Puts legend outside the plot
     plt.grid(True, alpha=0.3)
     plt.tight_layout()
-    plt.savefig("Trial_Comparison_Populations.png", dpi=300)
+    plt.savefig("Graphs/Trial_Comparison_Populations.png", dpi=300)
+
+
  
     #note: if you would like to compare more values, it is possible to copy paste the code of the parameters and running said parameters in addition to adding the values into the plot!
  
