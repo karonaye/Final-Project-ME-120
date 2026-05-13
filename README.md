@@ -29,7 +29,7 @@ The environment yml file should be sufficient, but if Anaconda is not used, the 
 
 
 ## How To Run
-First set up the environment and ensure that the Jupyter Notebook or .py files have no issues initializing and running. Go through the Jupyter Notebook in order or run the respective .py files needed (eg, allfilerun.py for a complete result. The interactive grid can be utilized. Alternatively, parameters can be set in the direct plot generation and can be adjusted in the section labelled ‘#Adjustable#. For the comparative analysis, two sets of parameters can be filled in.
+First set up the environment and ensure that the Jupyter Notebook or .py files have no issues initializing and running. Go through the Jupyter Notebook in order or run the respective .py files needed (eg, allfilerun.py for a complete result. The interactive grid can be utilized. Alternatively, parameters can be set in the direct plot generation and can be adjusted in the section labelled ‘#Adjustable#. For the comparative analysis, two sets of parameters can be filled in. Python files are the most optimizied version of the code and are preferable over Jupyter Notebook.
 
 
 ## Expected Outputs
